@@ -21,6 +21,4 @@ cmake --build .
 ```
 
 ## License
-All of the code which demonstrates a proof-of-concept of a bot leveraging ChatScript is licensed under the MIT License. Additional libraries as as follows:
-
-    - [cmake-cooking](https://github.com/hakuch/CMakeCooking) is a thin layer over CMake for creating flexible and reproducible development environments for CMake projects with external dependencies. Licensed under Apache License 2.0..
+All of the code which demonstrates a proof-of-concept of a bot leveraging ChatScript is licensed under the MIT License. Additional libraries may differ.
