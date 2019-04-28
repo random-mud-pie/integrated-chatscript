@@ -15,7 +15,7 @@ set(BoldRed "${Esc}[1;31m")
 
 add_compile_options(-Wall -Werror -Wpedantic)
 if (CMAKE_COMPILER_IS_GNUCXX)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-parameter -Wno-shadow")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-parameter -Wno-shadow -finput-charset=UTF-16")
 endif ()
 
 # CMAKE_MODULE_PATH: list of directories specifying a search path for CMake modules

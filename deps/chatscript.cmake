@@ -8,8 +8,8 @@ if (NOT TARGET chatscript_target) # if we haven't included before
     set(chatscript_VERSION 9.3)
     set(chatscript_FILENAME ChatScript.${chatscript_VERSION}.tiny.tar.gz)
     set(chatscript_URL https://github.com/random-mud-pie/ChatScript/releases/download/${chatscript_VERSION}.tiny/${chatscript_FILENAME})
-    set(chatscript_BUILD ${CMAKE_CURRENT_BINARY_DIR}/grpc/src/grpc_target)
-    set(chatscript_INCLUDES ${chatscript_BUILD}/SRC)
+    set(chatscript_BUILD ${CMAKE_CURRENT_BINARY_DIR}/chatscript/src/chatscript_target)
+    set(chatscript_INCLUDES ${chatscript_BUILD}/CHATSCRIPTIDE/)
 
     ExternalProject_Add(
             chatscript_target
@@ -21,6 +21,8 @@ if (NOT TARGET chatscript_target) # if we haven't included before
             BUILD_COMMAND ""
             INSTALL_COMMAND ""
             )
+
+        # TODO: need to patch (find . -type f -exec bash -c 'iconv -f iso-8859-1 -t utf-8 "{}" > ${chatscript_BUILD}/"{}"' \;)
 
     # propagate includes
     include_directories(

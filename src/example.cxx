@@ -1,4 +1,5 @@
 #include<iostream>
+#include "ChatScriptIDE.h"
 
 using namespace std;
 
