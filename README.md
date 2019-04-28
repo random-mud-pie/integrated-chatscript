@@ -14,7 +14,7 @@ This repo contains a proof-of-concept integrated code (single main()) which sets
 # Building
 
 ```
-make build
+mkdir build
 cd build
 cmake -GNinja ..
 cmake --build .
